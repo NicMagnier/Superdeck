@@ -3,20 +3,24 @@
 var DOM = React.DOM;
 
 var SuperdeckApp = React.createClass({
-	// define the list of props
-	propTypes: {
+	getInitialState: function() {
+		return {
+			deckID: this.getCurrentDocument()
+		}
 	},
 
-	getDefaultProps: function() {
-		return {
-			//value: 'default value'
-		};
+	documentHasChanged: function() {
+		this.setState({deckID: this.getCurrentDocument()});
+	},
+
+	getCurrentDocument: function() {
+		return 'test';
 	},
 
 	render: function() {
 		return React.createElement('div', {id:"coreContainer"},
 				React.createElement(MainHeader),
-				React.createElement(Document, {deckID:'test'})
+				React.createElement(Document, {deckID:this.state.deckID})
 			);
 	}
 });
