@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: #F0F0F0;
+	font-family: 'Helvetica', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+.actionCursor {
+	cursor: pointer;
+}
+
+#coreContainer {
+}
+
+#mainHeader {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	height: 80px;
+
+	background-color: #fec700;
+	box-shadow: 0 4px 4px rgba(50,50,50,0.1);
+	z-index: 1000;
+}
+
+#openDocument {
+	position: absolute;
+	top: 80px;
+	left:0;
+	right:0;
+	bottom: 0;
+	overflow: scroll;
+}
