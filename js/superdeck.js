@@ -1,5 +1,7 @@
 'use strict';
 
+var DOM = React.DOM;
+
 var SuperdeckApp = React.createClass({
 	// define the list of props
 	propTypes: {

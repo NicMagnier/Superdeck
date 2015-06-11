@@ -18,7 +18,7 @@ var Document = React.createClass({
 			lorem.push(React.DOM.p({key:i},'lorem ispum '+i));
 		}
 
-		return React.createElement('div', {id:"openDocument"},
+		return React.DOM.div({id:"openDocument"},
 			this.props.deckID,
 			lorem);
 	}
